@@ -1,0 +1,118 @@
+.searchInput{
+width: 550px;
+padding-top: 10px;
+padding-bottom: 10px;
+font-size: 35px;
+border-radius: 30px;
+outline: none;
+border: none;
+background-color: #F0F0F0;
+padding-left: 65px;
+&::placeholder{
+font-family: Roboto, sans-serif;
+font-size: 25px;
+font-weight: 400;
+line-height: 29px;
+letter-spacing: 0em;
+text-align: left;
+color: grey;
+}
+@media (max-width: 450px) {
+    display: none;
+}
+}
+.loginInput{
+width: 411px;
+border: none;
+border-bottom: 2.5px solid #0000001A;
+font-family: Inter, sans-serif;
+font-size: 23px;
+font-weight: 500;
+letter-spacing: 0em;
+text-align: left;
+color: #70A1FF;
+outline: none;
+@media(max-width:450px){
+ width: 291px;
+font-size: 25px;
+}
+}
+.loginInput ~ label{
+position: absolute;
+left: 0;
+right: 0;
+margin-top:5px;
+color: grey;
+pointer-events: none;
+transition: all 0.3s ease;
+font-family: Inter,sans-serif;
+}
+input:focus ~ label,
+input:valid ~ label{
+    transform: translateY(-20px);
+    font-size: 15px;
+   }
+
+.searchIcon{
+width: 30px;
+height: 30px;
+position: absolute;
+left: 0;
+margin-top: 15px;
+margin-left: 20px;
+@media (max-width: 450px) {
+   position:static;
+   margin: 0;
+}
+
+}
+.testInput{
+width: 421px;
+font-family: Roboto,sans-serif;
+font-size: 25px;
+font-weight: 500;
+line-height: 29px;
+letter-spacing: 0em;
+text-align: left; 
+border: none;
+border-bottom:2.5px solid #0000001A ;  
+padding-bottom: 5px;
+padding-left: 5px;
+outline: none;
+@media (max-width:414px) {
+    width: 300px;
+    font-size: 25px;   
+    text-align: center;
+}
+}
+.variantInput {
+width: 450px;
+border: none;
+border-bottom: 2.5px solid #0000001A;
+outline: none;
+font-size: 20px;
+}
+.question {
+    width: 781px;
+    height: 176px;
+    border-radius: 5px;
+    border: 0.4px solid;
+    outline: none;
+    resize: none;
+    @media (max-width:450px) {
+        width: 90%;
+        height: 176px;
+    }
+}
+.correct{
+    width: 325px;
+    height: 100px;
+    border-radius: 5px;
+    border: 0.4px solid;
+    outline: none;
+    resize: none;
+    @media (max-width:450px) {
+        width: 90%;
+        height: 100px;
+    }
+}
