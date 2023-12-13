@@ -25,7 +25,8 @@ const Input = ({
             (variant === 'search' && styles.searchInput) ||
             (variant === 'login' && styles.loginInput) ||
             (variant === 'test' && styles.testInput) ||
-            (variant === 'variantInput' && styles.variantInput)
+            (variant === 'variantInput' && styles.variantInput) ||
+            variant === 'correctCheckbox' && styles.correctCheckbox
           }
           required
         />
