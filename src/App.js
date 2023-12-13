@@ -1,6 +1,4 @@
-import UiSelect from './components/UI/Select'
-
 const App = () => {
-  return <UiSelect />
+  return <div />
 }
 export default App
