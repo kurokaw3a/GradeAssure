@@ -1,4 +1,10 @@
+import Footer from './components/UI/Footer'
+
 const App = () => {
-  return <div />
+  return (
+    <div>
+      <Footer />
+    </div>
+  )
 }
 export default App
