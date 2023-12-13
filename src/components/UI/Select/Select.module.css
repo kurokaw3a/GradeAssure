@@ -1,0 +1,27 @@
+.arrowIcon{
+    width: 25px;
+    height: 25px;
+    rotate: -90deg;
+    position: absolute;
+    left: 100;
+    right: 0;
+    user-select: none;
+    pointer-events: none;
+}
+.select{
+    width: max-content;
+padding: 0px 5px 0px 5px;
+border: 2px solid rgb(146, 146, 146);
+outline: none;
+border-radius: 4px;
+font-family: Roboto, sans-serif;
+font-size: 15px;
+font-weight: 500;
+line-height: 22px;
+letter-spacing: 0em;
+text-align: left;
+color: rgb(79, 79, 79);
+user-select: none;
+cursor: pointer;
+}
+
