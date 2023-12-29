@@ -1,0 +1,94 @@
+.header{
+    width: 100%;
+    height: 83px;
+    border-bottom: 1px solid;  
+    display: flex;
+    align-items: center;
+    @media (max-width:550px) {
+        height: 55px;
+    }
+}
+.title{
+    font-family: Inter;
+    font-size: 23px;
+    font-weight: 900;
+    letter-spacing: 0em;   
+    @media (max-width:550px) {
+        font-size: 16px;
+    }
+}
+.nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 150px 0px 30px;
+    user-select: none;
+    @media (max-width:550px) {
+        padding: 0px 20px 0px 20px;
+    }
+}
+.menu{
+    display: flex;
+    gap: 56px;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0em;
+    p {
+     cursor: pointer;
+    }
+    @media (max-width:550px) {
+        display: none;
+    }
+}
+.search{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   width: 900px;
+   @media (max-width:550px) {
+    width: max-content;
+    flex-direction: row-reverse;
+    gap: 30px;
+   }
+}
+.blockedText{
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0em;
+    cursor: pointer;
+}
+.burger{
+ display: none;
+ @media (max-width:550px) {
+    display: block;
+    width: 40px;
+    height: 40px;
+ }
+}
+.selected{
+   display: flex;
+   align-items: center;
+   gap: 24px;
+   font-family: Inter;
+   font-size: 25px;
+   font-weight: 400;
+   letter-spacing: 0em;
+   margin-left: 132px;
+   @media (max-width:550px) {
+    margin-left: 0;
+    gap: 5px;
+   }
+}
+.closeIcon{
+   width: 30px;
+   height: 30px;
+}
+.actionsIcon{
+    width: 20px;
+    height: 20px;
+    user-select: none;
+    cursor: pointer;
+}
