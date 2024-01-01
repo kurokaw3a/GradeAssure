@@ -13,6 +13,9 @@ const Input = ({
 }) => {
   return (
     <div>
+            {variant === 'search' && (
+        <img className={styles.searchIcon} src={SearchIcon} alt='error' />
+      )}
       {inputType === 'textarea' ? (
         <textarea className={variant === 'question' && styles.question || variant === 'correct' && styles.correct}/>
       ) : (
@@ -30,10 +33,6 @@ const Input = ({
           }
           required
         />
-      )}
-
-      {variant === 'search' && (
-        <img className={styles.searchIcon} src={SearchIcon} alt='error' />
       )}
       <label>{label}</label>
     </div>

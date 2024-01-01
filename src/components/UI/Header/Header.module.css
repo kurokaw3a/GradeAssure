@@ -1,0 +1,220 @@
+.header{
+    width: 100%;
+    height: 83px;
+    border-bottom: 1px solid;  
+    display: flex;
+    align-items: center;
+    @media (max-width:550px) {
+        height: 55px;
+    }
+}
+.title{
+    font-family: Inter;
+    font-size: 23px;
+    font-weight: 900;
+    letter-spacing: 0em;   
+    @media (max-width:550px) {
+        font-size: 16px;
+    }
+}
+.nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 150px 0px 30px;
+    user-select: none;
+    @media (max-width:550px) {
+        padding: 0px 20px 0px 20px;
+    }
+}
+.menu{
+    display: flex;
+    gap: 56px;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0em;
+    p {
+     cursor: pointer;
+    }
+    @media (max-width:550px) {
+        display: none;
+    }
+}
+.search{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   width: 900px;
+   @media (max-width:550px) {
+    width: max-content;
+    flex-direction: row-reverse;
+    gap: 30px;
+   }
+}
+.blockedText{
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0em;
+    cursor: pointer;
+}
+.burger{
+ display: none;
+ @media (max-width:550px) {
+    display: block;
+    width: 40px;
+    height: 40px;
+ }
+}
+.selected{
+   display: flex;
+   align-items: center;
+   gap: 24px;
+   font-family: Inter;
+   font-size: 25px;
+   font-weight: 400;
+   letter-spacing: 0em;
+   margin-left: 132px;
+   @media (max-width:550px) {
+    margin-left: 0;
+    gap: 5px;
+    font-size: 20px;
+   }
+}
+.closeIcon{
+   width: 30px;
+   height: 30px;
+   user-select: none;
+   cursor: pointer;
+}
+.actionsIcon{
+    width: 20px;
+    height: 20px;
+    user-select: none;
+    cursor: pointer;
+}
+.timeText{
+  color: #0074FF;
+  font-family: Inter;
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: 0em;
+  @media (max-width:550px) {
+    font-size: 20px;
+  }
+}
+.maximumQuantity{
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0em;
+    color: gray; 
+    @media (max-width:550px) {
+        font-size: 15px;
+      }   
+}
+.teacherButton{
+ @media (max-width:550px) {
+    display: none;
+ }
+}
+.actions{
+    background: white;
+    z-index: 1;
+    width: 202px;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    border-radius: 6px;
+    border: 1px solid;
+    position: absolute;
+    right: 0;
+    margin-top: 100px;
+    margin-right: 40px;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0em;
+    padding: 8px 10px 5px 10px;
+    animation: show 0.2s ease;
+    user-select: none;
+}
+@keyframes show {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.action{
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 2px;
+    transition: 0.5s;
+    &:hover{
+        background: rgb(233, 233, 233);
+    }
+    &:active{
+        background: rgb(204, 204, 204);
+    }
+}
+.backdrop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    background: rgba(0, 0, 0, 0.20);
+    @media (max-width: 5000px) {
+        display: none;
+    }
+    @media (max-width: 550px) {
+        display: block;
+    }
+}
+.side{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 216px;
+    height: 100%;
+    background: rgb(255, 255, 255);
+    animation: showSide 0.5s ease;
+    @media (max-width: 5000px) {
+        display: none;
+    }
+    @media (max-width: 550px) {
+        display: block;
+    }
+}
+@keyframes showSide {
+    from{
+        opacity: 0;
+        width: 0;
+    }
+    to {
+        opacity: 1;
+        width: 216px;
+    }
+}
+.closeSide{
+    user-select: none;
+    transform: rotate(5deg);
+}
+.sideNav{
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0em;    
+    color: #000000;
+    margin-left: 18px;
+    margin-top: 31px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
