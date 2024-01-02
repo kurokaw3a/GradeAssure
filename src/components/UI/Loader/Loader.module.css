@@ -1,0 +1,19 @@
+.loader {
+    width: 120px;
+    height: 120px;
+    border: 7px solid #e1e1e1;
+    border-bottom-color: rgba(5, 0, 255, 1);
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    }
+
+    @keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+    } 
