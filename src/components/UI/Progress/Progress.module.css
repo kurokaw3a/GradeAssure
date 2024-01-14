@@ -1,0 +1,32 @@
+.progress{
+  transition: 0.5s;
+}
+.bar {
+  position: relative;
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  transform: rotate(100deg);
+  transition: 0.5s;
+}
+.bar::before{
+ content: "";
+ position: absolute;
+ width: 230px;
+ height: 230px;
+ border-radius: 50%;
+ background: white;
+}
+.percent{
+  font-family: Roboto, sans-serif;
+  font-size: 90px;
+  font-weight: 500;
+  letter-spacing: 0em;
+  color: rgba(0, 255, 56, 1);
+  position: absolute;
+  transform: rotate(260deg);
+}
