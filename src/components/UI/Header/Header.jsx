@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import actionsIcon from '../../../assets/headerIcons/actionsIcons.svg'
 import burgerIcon from '../../../assets/headerIcons/burger.svg'
 import closeIcon from '../../../assets/headerIcons/closeIcon.svg'
+import Actions from '../Actions/Actions'
 import Button from '../Button/Button'
 import Input from '../Input/Input'
 import styles from './Header.module.css'
@@ -21,10 +21,6 @@ const Header = ({
   onClose,
   page,
 }) => {
-  const [showActions, setShowActions] = useState(false)
-  const showActionsHandler = () => {
-    setShowActions((prev) => !prev)
-  }
   const [showSide, setShowSide] = useState(false)
   const showSideHandler = () => {
     setShowSide(true)
@@ -114,34 +110,14 @@ const Header = ({
                 <Button variant='headerButton'>Choose</Button>
               </div>
             ) : (
-              <img
-                className={styles.actionsIcon}
-                src={actionsIcon}
-                alt='none'
-                onClick={showActionsHandler}
+              <Actions
+                variant='header'
+                page={page}
+                onDelete={onDelete}
+                onBlock={onBlock}
+                onUnblock={onUnblock}
+                onRefuse={onRefuse}
               />
-            )}
-            {showActions && (
-              <div className={styles.actions}>
-                {(page !== 'requests' && page !== 'blockedRequests' && (
-                  <p onClick={onDelete} className={styles.action}>
-                    Delete
-                  </p>
-                )) ||
-                  (page === 'requests' && (
-                    <p onClick={onRefuse} className={styles.action}>
-                      Refuse
-                    </p>
-                  )) ||
-                  (page === 'blockedRequests' && (
-                    <p onClick={onUnblock} className={styles.action}>
-                      Unblock
-                    </p>
-                  ))}
-                <p onClick={onBlock} className={styles.action}>
-                  Block
-                </p>
-              </div>
             )}
           </>
         )}

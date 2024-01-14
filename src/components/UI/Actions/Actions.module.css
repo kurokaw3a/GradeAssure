@@ -1,0 +1,98 @@
+.actionsIcon{
+    width: 20px;
+    height: 29px;
+    user-select: none;
+    cursor: pointer;
+}
+.headerActionsIcon{
+    width: 20px;
+    height: 20px;
+    user-select: none;
+    cursor: pointer;
+}
+.actions{
+    background: white;
+    z-index: 1;
+    width: 202px;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    border-radius: 6px;
+    border: 1px solid;
+    font-family: Inter;
+    position: absolute;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0em;
+    padding: 8px 10px 5px 10px;
+    animation: show 0.2s ease;
+    user-select: none;
+}
+.actionsHeader{
+    background: white;
+    z-index: 1;
+    width: 202px;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    border-radius: 6px;
+    border: 1px solid;
+    font-family: Inter;
+    position: absolute;
+    right: 50px;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0em;
+    padding: 8px 10px 5px 10px;
+    animation: show 0.2s ease;
+    user-select: none;
+}
+.actions{
+    background: white;
+    z-index: 1;
+    width: 202px;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    border-radius: 6px;
+    border: 1px solid;
+    font-family: Inter;
+    position: absolute;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0em;
+    padding: 8px 10px 5px 10px;
+    animation: show 0.2s ease;
+    user-select: none;
+}
+@keyframes show {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.action{
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 2px;
+    transition: 0.5s;
+    &:hover{
+        background: rgb(233, 233, 233);
+    }
+    &:active{
+        background: rgb(204, 204, 204);
+    }
+}
+.backdrop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+}
