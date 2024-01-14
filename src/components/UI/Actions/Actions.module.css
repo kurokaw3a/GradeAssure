@@ -29,6 +29,45 @@
     animation: show 0.2s ease;
     user-select: none;
 }
+.actionsHeader{
+    background: white;
+    z-index: 1;
+    width: 202px;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    border-radius: 6px;
+    border: 1px solid;
+    font-family: Inter;
+    position: absolute;
+    right: 50px;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0em;
+    padding: 8px 10px 5px 10px;
+    animation: show 0.2s ease;
+    user-select: none;
+}
+.actions{
+    background: white;
+    z-index: 1;
+    width: 202px;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    border-radius: 6px;
+    border: 1px solid;
+    font-family: Inter;
+    position: absolute;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0em;
+    padding: 8px 10px 5px 10px;
+    animation: show 0.2s ease;
+    user-select: none;
+}
 @keyframes show {
     from {
         opacity: 0;

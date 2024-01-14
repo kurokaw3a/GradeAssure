@@ -22,7 +22,7 @@ const Actions = ({
   return (
     <div>
       {showActions && variant === 'header' && (
-        <div className={styles.actions}>
+        <div className={styles.actionsHeader}>
           {(page !== 'requests' && page !== 'blockedRequests' && (
             <p onClick={onDelete} className={styles.action}>
               Delete
